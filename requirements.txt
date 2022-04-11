@@ -18,7 +18,7 @@ chardet==4.0.0
 charset-normalizer==2.0.6
 click==8.0.1
 colorama==0.4.4
-cpp2python==0.2.0
+cpp2python
 cycler==0.10.0
 debugpy==1.4.3
 decorator==5.1.0
