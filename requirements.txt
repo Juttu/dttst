@@ -1,5 +1,5 @@
 charset-normalizer
-# cpp2python
+cpp2python
 dnspython
 flask-pymongo
 fyers-apiv2
