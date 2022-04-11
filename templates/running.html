@@ -1,0 +1,87 @@
+<html> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <style>.HoverBTN {
+            background-color: #00CC66;
+            color: white;
+            border-radius: 10px;
+            border-width: 0.01px;
+            width: 350px;
+            height: 150px;
+            font-size: 30px;
+            box-shadow: rgb(218, 218, 218) 10px 10px;
+            transition-duration: 1.3s;
+          }
+          .HoverBTN:hover {
+            background-color: rgb(255, 126, 104);
+            transition-duration: 1.3s;
+            width: 500px;
+            font-size: 20pt;
+            height: 100px;
+          }
+          
+          .div1 {
+            text-align: center;
+            padding: 300px;
+          }
+          
+          /* Clear out these styles to start fresh or use this as a base! */
+
+@import url(https://fonts.googleapis.com/css?family=Kanit:600);
+
+html { height: 100%; display: flex; }
+body { margin: auto; }
+html, body {
+  background: #00043C;
+  color: #FFF;
+  font: normal 600 7vw/1.5 Kanit, sans-serif;
+  text-align: center;
+}
+
+.rainbow-text .char { 
+  
+  color: hsl(
+    calc(360deg * var(--char-percent)
+    ), 
+    90%, 
+    65%
+  );
+ 
+}
+
+.rainbow-text.animated .char {
+  animation: rainbow-colors 2s linear infinite;
+  animation-delay: calc(-2s * var(--char-percent));
+}
+/* Unfortunately, browsers try to take the shortest distance between transition/animation properties, so a simple `0turn` to `1turn` doesn't get the proper effect. */
+@keyframes rainbow-colors {
+  0% { color: hsl(0turn, 90%, 65%); }
+  25% { color: hsl(.25turn, 90%, 65%); }
+  50% { color: hsl(.5turn, 90%, 65%); }
+  75% { color: hsl(.75turn, 90%, 65%); }
+  100% { color: hsl(1turn, 90%, 65%); }
+}</style>
+
+
+
+	</head>
+	
+	<body>
+        <form action="/stop" method="POST">
+
+
+            <div class="div1" id="ButtonDiv">
+                <button type="Submit" class="HoverBTN">Click Here to STOP the strategy</button>
+              </div>
+        </form>
+
+        <div style="margin-top: -350px;" class="rainbow-text animated" data-splitting>Check Whatsapp for Updates [Orders Placed, Final P&L]</div>
+
+
+
+    </body>
+    <script>Splitting();</script>
+
+</html>
+
